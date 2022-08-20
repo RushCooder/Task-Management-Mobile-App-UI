@@ -3,8 +3,9 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 const bgcolor = Color(0xff191A22);
+const greyclr = Color(0xff8E8E93);
 
-myTitle([double? lspace]) {
+TextStyle myTitle([double? lspace]) {
   return GoogleFonts.nunito(
       fontSize: 30,
       color: Colors.white,
@@ -12,35 +13,13 @@ myTitle([double? lspace]) {
       letterSpacing: lspace);
 }
 
-myText(Color? clr, [double? lspace]) {
+TextStyle myText(Color? clr, [double? lspace]) {
   return GoogleFonts.nunito(
       fontSize: 16,
       color: clr,
       fontWeight: FontWeight.w600,
       letterSpacing: lspace);
 }
-
-// textField(String? hintext, Icons? icon) {
-//   String hintext;
-//   Icon icon;
-//   return TextField(
-//     decoration: InputDecoration(
-//       contentPadding: EdgeInsets.all(16),
-//       enabledBorder: OutlineInputBorder(
-//         borderSide: BorderSide(width: 1, color: Colors.grey),
-//         borderRadius: BorderRadius.circular(28),
-//       ),
-//       hintText: '${hintext}',
-//       hintStyle: TextStyle(
-//         color: Color(0xff8E8E93),
-//       ),
-//       prefixIcon: Icon(
-//         Icons.$icon,
-//         color: Color(0xff8E8E93),
-//       ),
-//     ),
-//   );
-// }
 
 class CustomTextField extends StatelessWidget {
   CustomTextField({required this.hintext, required this.ticon});
@@ -75,6 +54,5 @@ class CustomTextField extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

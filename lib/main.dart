@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter_database/scrrens/Steeper/steeper5.dart';
+import 'package:flutter_database/scrrens/project/project_details.dart';
 
 
 void main() => runApp(
@@ -13,10 +13,10 @@ class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp(   
       theme: ThemeData(backgroundColor: Colors.amberAccent),
       debugShowCheckedModeBanner: false,
-      home: SteeperPage5(),
+      home: ProjectDetails(),
     );
   }
 }
