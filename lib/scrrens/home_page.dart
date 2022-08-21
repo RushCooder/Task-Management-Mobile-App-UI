@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_database/custom_widget/component.dart';
-import 'package:flutter_database/scrrens/bottom_nav/screen/bottom_nav_bar.dart';
-import 'package:flutter_database/widgets/my_task_list.dart';
 import 'package:flutter_database/widgets/project_task_list.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-class MyTaskPage extends StatelessWidget {
+class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,6 +53,9 @@ class MyTaskPage extends StatelessWidget {
               Text(
                 'Project Task',
                 style: myText(Colors.white),
+              ),
+              SizedBox(
+                height: 16,
               ),
               Container(
                 height: 80,
@@ -112,7 +113,7 @@ class MyTaskPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                  height: 10,
+                height: 46,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -130,7 +131,6 @@ class MyTaskPage extends StatelessWidget {
               SizedBox(
                 height: 16,
               ),
-              Expanded(child: MyTaskListPage()),
             ],
           ),
         ),

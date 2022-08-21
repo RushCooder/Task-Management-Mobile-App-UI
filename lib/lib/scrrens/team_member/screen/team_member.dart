@@ -2,8 +2,8 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 import 'package:flutter_database/custom_widget/component.dart';
+import 'package:flutter_database/lib/widgets/invite_member_showModal.dart';
 import 'package:flutter_database/model/my_task_list.dart';
-import 'package:flutter_database/widgets/invite_member_showModal.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class TeamMemberPage extends StatelessWidget {

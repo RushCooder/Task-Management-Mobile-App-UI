@@ -54,6 +54,5 @@ class CustomTextField extends StatelessWidget {
         ),
       ),
     );
-    ;
   }
 }

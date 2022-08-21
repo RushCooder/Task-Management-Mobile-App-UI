@@ -10,7 +10,7 @@ class Model {
       details2,
       email,
       taskName;
-  final int? id, percentage;
+  final int? id,percentage ;
   final Color? color;
   final IconData? icon;
   final String? details;
@@ -34,15 +34,14 @@ class Model {
     this.color,
   });
 }
-
-List myList = [
+ List<Model> myList = [
   Model(
       delay: "4h",
       taskName: "Web Design",
       email: "mitu@gmail.com",
       details:
           "Conversely, many high-end blogs in the marketing space consistently ",
-      type: "Assigned",
+      type: "In Progress",
       time: "3.03 pm",
       title: "Task 1",
       details2:
@@ -56,7 +55,7 @@ List myList = [
       img:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5OBcDHB7bXgsunvlgdudK67mlk6BTeyt8sHFm4PXtEcULfjHTlj3SL5t2SnErfHR_2s&usqp=CAU"),
   Model(
-      type: "Open",
+      type: "Urgent",
       taskName: "App Development",
       email: "pranto@gmail.com",
       details:
@@ -83,7 +82,7 @@ List myList = [
       title: "Task 3",
       delay: "4h",
       id: 132,
-      type: "Assigned",
+      type: "In Review",
       email: "pranto@gmail.com",
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
@@ -104,12 +103,12 @@ List myList = [
       delay: "4h",
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
-      type: "Open",
+      type: "Approve",
       svgSrc: "assets/icons/drop_box.svg",
       totalStorage: "7.3GB",
       email: "pranto@gmail.com",
       color: Color(0xFF007EE5),
-      percentage: 78,
+      percentage: 100,
       img:
           "https://st3.depositphotos.com/14846838/19463/v/450/depositphotos_194638886-stock-illustration-flat-icon-man-suit.jpg"),
   Model(
@@ -122,7 +121,7 @@ List myList = [
       id: 15,
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
-      type: "Assigned",
+      type: "Urgent",
       svgSrc: "assets/icons/drop_box.svg",
       totalStorage: "7.3GB",
       email: "pranto@gmail.com",
@@ -136,7 +135,7 @@ List myList = [
       email: "mitu@gmail.com",
       details:
           "Conversely, many high-end blogs in the marketing space consistently ",
-      type: "Assigned",
+      type: "In Review",
       time: "3.03 pm",
       title: "Task 1",
       details2:
@@ -150,7 +149,7 @@ List myList = [
       img:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa5OBcDHB7bXgsunvlgdudK67mlk6BTeyt8sHFm4PXtEcULfjHTlj3SL5t2SnErfHR_2s&usqp=CAU"),
   Model(
-      type: "Open",
+      type: "In Progress",
       taskName: "App Development",
       email: "pranto@gmail.com",
       details:
@@ -177,14 +176,14 @@ List myList = [
       title: "Task 3",
       delay: "4h",
       id: 132,
-      type: "Assigned",
+      type: "Approve",
       email: "pranto@gmail.com",
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
       svgSrc: "assets/icons/one_drive.svg",
       totalStorage: "420",
       color: Color(0xFFA4CDFF),
-      percentage: 10,
+      percentage: 100,
       img:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvWNvxqwJyqQtJQLKuWSGDQaxDG0JQ1LHbV_ffZ1qdFc85UtnfLu1D2IbsKPdIqnUtyE8&usqp=CAU"),
   Model(
@@ -198,7 +197,7 @@ List myList = [
       delay: "4h",
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
-      type: "Open",
+      type: "Urgent",
       svgSrc: "assets/icons/drop_box.svg",
       totalStorage: "7.3GB",
       email: "pranto@gmail.com",
@@ -216,7 +215,7 @@ List myList = [
       id: 15,
       details2:
           "words for just about everything I write and often try to exceed that. Some of my posts are over 4,000 words on deeper and more competitive topics",
-      type: "Assigned",
+      type: "In Review",
       svgSrc: "assets/icons/drop_box.svg",
       totalStorage: "7.3GB",
       email: "pranto@gmail.com",

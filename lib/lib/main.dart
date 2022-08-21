@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:device_preview/device_preview.dart';
-import 'package:flutter_database/scrrens/Steeper/steeper5.dart';
-import 'package:flutter_database/scrrens/home_page.dart';
-import 'package:flutter_database/widgets/my_task_list.dart';
+import 'package:flutter_database/lib/scrrens/bottom_nav/screen/bottom_nav_bar.dart';
+import 'package:flutter_database/lib/scrrens/bottom_nav/screen/project/project_click_details.dart';
 
 void main() => runApp(
       DevicePreview(
@@ -17,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: ThemeData(backgroundColor: Colors.amberAccent),
       debugShowCheckedModeBanner: false,
-      home: MyTaskListPage(),
+      home: HomePage(),
     );
   }
 }
